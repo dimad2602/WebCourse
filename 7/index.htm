@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 7</title>
+    <style>
+      body,
+      p {
+        margin: 0;
+      }
+
+      img {
+        display: block;
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .container {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+
+      .rows {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+      }
+      .rows__cell {
+        width: calc((100% - 20px) / 3);
+        /* width: calc(27%); */
+      }
+
+      .item {
+        padding: 20px;
+        border: 1px solid red;
+        background-color: aquamarine;
+        overflow: hidden;
+      }
+
+      .item__thumb {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+      }
+
+      .item__description {
+        margin-bottom: 20px;
+      }
+      .item__mark {
+        width: 100%;
+        padding: 25px;
+        border-radius: 9999px;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rows">
+        <div class="item rows__cell">
+          <img
+            class="item__thumb"
+            src="https://sun9-19.userapi.com/impf/aj1W-8kbXKWdad25eO2h14IcLDMXw2jIdgapxg/1Zt2LsT6Tnk.jpg?size=200x500&quality=96&sign=8708d104e3494468d5e0108f1d17002f&type=album"
+            alt=""
+          />
+          <p class="item__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugiat
+            beatae ipsam! Ipsum soluta odit sint enim, provident asperiores. Qui
+            recusandae mollitia officiis nobis, provident quo illo corporis
+            ipsam nisi.
+          </p>
+          <div class="item__mark"></div>
+        </div>
+
+        <div class="item rows__cell">
+          <img
+            class="item__thumb"
+            src="https://sun9-19.userapi.com/impf/aj1W-8kbXKWdad25eO2h14IcLDMXw2jIdgapxg/1Zt2LsT6Tnk.jpg?size=200x500&quality=96&sign=8708d104e3494468d5e0108f1d17002f&type=album"
+            alt=""
+          />
+          <p class="item__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugiat
+            beatae ipsam! Ipsum soluta odit sint enim, provident asperiores. Qui
+            recusandae mollitia officiis nobis, provident quo illo corporis
+            ipsam nisi.
+          </p>
+          <div class="item__mark"></div>
+        </div>
+
+        <div class="item rows__cell">
+          <img
+            class="item__thumb"
+            src="https://sun9-19.userapi.com/impf/aj1W-8kbXKWdad25eO2h14IcLDMXw2jIdgapxg/1Zt2LsT6Tnk.jpg?size=200x500&quality=96&sign=8708d104e3494468d5e0108f1d17002f&type=album"
+            alt=""
+          />
+          <p class="item__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugiat
+            beatae ipsam! Ipsum soluta odit sint enim, provident asperiores. Qui
+            recusandae mollitia officiis nobis, provident quo illo corporis
+            ipsam nisi.
+          </p>
+          <div class="item__mark"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

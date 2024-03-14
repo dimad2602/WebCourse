@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+body {
+  margin: 0;
+}
+
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.truncate{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container > * + * {
+    margin-top: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 4</title>
+    <style>
+      .input-container {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="input-container">
+          <label for="name">ФИО</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="ФИО"
+            value=""
+            required
+          />
+        </div>
+
+        <!-- Email input -->
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            class="input"
+            type="email"
+            placeholder="Email"
+          />
+        </div>
+        <!-- Telephone input -->
+        <div class="input-container">
+          <label for="tel">Телефон</label>
+          <input
+            id="tel"
+            name="tel"
+            class="input"
+            type="tel"
+            placeholder="Телефон"
+            value="88005553535"
+            disabled
+            readonly
+          />
+        </div>
+
+        <!-- Number input -->
+        <div class="input-container">
+          <label for="number">Число</label>
+          <input
+            id="number"
+            name="number"
+            class="input"
+            type="number"
+            placeholder="Число"
+          />
+        </div>
+
+        <!-- Password input -->
+        <div class="input-container">
+          <label for="password">Пароль</label>
+          <input
+            id="password"
+            name="password"
+            class="input"
+            type="password"
+            placeholder="Пароль"
+          />
+        </div>
+
+        <!-- File input -->
+        <div class="input-container">
+          <label for="file">Файл</label>
+          <input
+            id="file-upload"
+            name="file-upload"
+            class="input"
+            type="file"
+            accept="image/*"
+          />
+        </div>
+
+        <!-- Date input -->
+        <div class="input-container">
+          <label for="date">Дата</label>
+          <input id="date" name="date" class="input" type="date" />
+        </div>
+
+        <!-- Color input -->
+        <div class="input-container">
+          <label for="color">Цвет</label>
+          <input id="color" name="color" class="input" type="color" />
+        </div>
+
+        <!-- Checkbox -->
+        <div class="input-container">
+          <input id="checkbox" name="checkbox" class="input" type="checkbox" />
+          <label for="checkbox">Чекбокс</label>
+        </div>
+
+        <!-- Radio -->
+        <div class="input-container">
+          <input id="radio1" name="radio" class="input" type="radio" />
+          <label for="radio1">Радио 1</label>
+          <input id="radio2" name="radio" class="input" type="radio" />
+          <label for="radio2">Радио 2</label>
+        </div>
+
+        <!-- Textarea -->
+        <div class="input-container">
+          <label for="textarea">Текстовое поле</label>
+          <textarea
+            id="textarea"
+            name="textarea"
+            class="input"
+            placeholder="Текстовое поле"
+          ></textarea>
+        </div>
+
+        <!-- Select -->
+        <div class="input-container">
+          <label for="select">Выбор</label>
+          <select id="select" name="select" class="input">
+            <option value="option1">Опция 1</option>
+            <option value="option2">Опция 2</option>
+            <option value="option3">Опция 3</option>
+          </select>
+        </div>
+
+        <!-- Multi-select -->
+        <div class="input-container">
+          <label for="multiSelect">Мульти-выбор</label>
+          <select id="multiSelect" name="multiSelect" class="input" multiple>
+            <option value="option1">Опция 1</option>
+            <option value="option2">Опция 2</option>
+            <option value="option3">Опция 3</option>
+          </select>
+        </div>
+
+        <!-- Hidden input -->
+        <input type="hidden" name="hiddenInput" value="hiddenValue" />
+
+        <!-- по умолчанию type="submit" -->
+        <button>Отправить</button>
+      </form>
+    </div>
+  </body>
+</html>
