@@ -1,0 +1,97 @@
+/* Стили для блока header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Стили для элемента header__logo */
+.header__logo {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* Стили для элемента header__nav */
+.header__nav {
+  margin-top: 10px;
+}
+
+/* Стили для элемента header__menu */
+.header__menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Стили для элемента header__menu-item */
+.header__menu-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Стили для элемента header__menu-link */
+.header__menu-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Стили для активного элемента header__menu-item */
+.header__menu-item--active .header__menu-link {
+  font-weight: bold;
+}
+
+/* Стили для блока content */
+.content {
+  padding: 20px;
+}
+
+/* Стили для элемента content__title */
+.content__title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Стили для элемента content__text */
+.content__text {
+  font-size: 16px;
+}
+
+/* Стили для блока footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Стили для элемента footer__logo */
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Стили для элемента footer__nav */
+.footer__nav {
+  margin-top: 10px;
+}
+
+/* Стили для элемента footer__menu */
+.footer__menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Стили для элемента footer__menu-item */
+.footer__menu-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Стили для элемента footer__menu-link */
+.footer__menu-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Стили для активного элемента footer__menu-item */
+.footer__menu-item--active .footer__menu-link {
+  font-weight: bold;
+}

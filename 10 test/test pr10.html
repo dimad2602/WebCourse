@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем файл стилей -->
+</head>
+<body>
+    <div class="header"> <!-- Блок -->
+        <div class="header__logo"> <!-- Элемент -->
+            Logo
+        </div>
+        <nav class="header__nav"> <!-- Элемент -->
+            <ul class="header__menu"> <!-- Элемент -->
+                <li class="header__menu-item"> <!-- Элемент -->
+                    <a href="#" class="header__menu-link">Home</a> <!-- Элемент -->
+                </li>
+                <li class="header__menu-item header__menu-item--active"> <!-- Элемент с модификатором -->
+                    <a href="#" class="header__menu-link">About</a>
+                </li>
+                <li class="header__menu-item"> <!-- Элемент -->
+                    <a href="#" class="header__menu-link">Services</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1 class="content__title">Welcome to our website!</h1> <!-- Блок -->
+        <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <!-- Блок -->
+    </div>
+
+    <div class="footer">
+        <div class="footer__logo"> <!-- Элемент -->
+            Footer Logo
+        </div>
+        <nav class="footer__nav"> <!-- Элемент -->
+            <ul class="footer__menu"> <!-- Элемент -->
+                <li class="footer__menu-item"> <!-- Элемент -->
+                    <a href="#" class="footer__menu-link">Home</a> <!-- Элемент -->
+                </li>
+                <li class="footer__menu-item"> <!-- Элемент -->
+                    <a href="#" class="footer__menu-link">About</a> <!-- Элемент -->
+                </li>
+                <li class="footer__menu-item footer__menu-item--active"> <!-- Элемент с модификатором -->
+                    <a href="#" class="footer__menu-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
