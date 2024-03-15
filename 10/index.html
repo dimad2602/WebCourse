@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 10</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="page">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#"
+            ><img class="logo logo--header" src="logo.jpg" alt=""
+          /></a>
+          <div class="menu">
+            <div><a href="#">Главная</a></div>
+            <div><a href="#">О нас</a></div>
+            <div><a href="#">Товары</a></div>
+            <div><a href="#">Контакты</a></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="page__spacing container">
+      <h1 class="header__main">Магазин</h1>
+    </section>
 
-    <div class="header">
-        <div class="container">
-            <div class="nav">
-                <a href="#"><img class="logo logo--header" src="logo.jpg" alt=""></a>
-                <div class="menu">
-                    <div><a href="#">Главная</a></div>
-                    <div><a href="#">О нас</a></div>
-                    <div><a href="#">Товары</a></div>
-                    <div><a href="#">Контакты</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page__spacing container">
-        <h1 class="main-header">Магазин</h1>
-    </div>
+    <main class="container">
+      <section class="page__spacing area">
+        <header class="header__second">
+          <h2>Товары</h2>
+        </header>
+        <article class="products">
+          <div class="products__item products--big">
+            <h3>Товар 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus, consequatur voluptate architecto laborum vel ab
+              alias excepturi tempore soluta, ex commodi, eius molestias
+              reiciendis neque omnis eaque magni facilis recusandae!
+            </p>
+          </div>
+          <div class="products__item">
+            <h3>Товар 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus, consequatur voluptate architecto laborum vel ab
+              alias excepturi tempore soluta, ex commodi, eius molestias
+              reiciendis neque omnis eaque magni facilis recusandae!
+            </p>
+          </div>
+          <div class="products__item">
+            <h3>Реклама</h3>
+            <img
+              width="264"
+              height="264"
+              src="https://place-hold.it/150x150?text=ADS"
+              alt=""
+            />
+          </div>
+          <div class="products__item">
+            <h3>Товар 4</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus, consequatur voluptate architecto laborum vel ab
+              alias excepturi tempore soluta, ex commodi, eius molestias
+              reiciendis neque omnis eaque magni facilis recusandae!
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
 
-    <div class="container">
-
-        <div class="page__spacing area">
-            <div class="second-header">
-                <h2>Товары</h2>
-            </div>
-            <div class="products">
-                <div class="product productsBig">
-                    <h3>Товар 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, consequatur voluptate architecto laborum vel ab alias excepturi tempore soluta, ex commodi, eius molestias reiciendis neque omnis eaque magni facilis recusandae!</p>
-                </div>
-                <div class="product">
-                    <h3>Товар 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, consequatur voluptate architecto laborum vel ab alias excepturi tempore soluta, ex commodi, eius molestias reiciendis neque omnis eaque magni facilis recusandae!</p>
-                </div>
-                <div class="product">
-                    <h3>Реклама</h3>
-                    <img width="264" height="264" src="https://place-hold.it/150x150?text=ADS" alt="">
-                </div>
-                <div class="product">
-                    <h3>Товар 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, consequatur voluptate architecto laborum vel ab alias excepturi tempore soluta, ex commodi, eius molestias reiciendis neque omnis eaque magni facilis recusandae!</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="page__spacing footer">
-        <div class="container">
-            <p>THIS FOOTER</p>
-        </div>
-    </div>
-
-</body>
+    <footer class="page__spacing footer">
+      <div class="container">
+        <p>THIS FOOTER</p>
+      </div>
+    </footer>
+  </body>
 </html>
