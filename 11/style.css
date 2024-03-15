@@ -1,3 +1,17 @@
+/* .font-mulish {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-mulish--bold{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+} */
+
 h1,
 h2,
 h3,
@@ -5,6 +19,8 @@ p,
 ol,
 ul,
 body {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -19,6 +35,49 @@ h6 {
   font-weight: inherit;
 }
 
+.heading-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  line-height: 2rem;
+  text-align: center;
+  border: 2px dotted;
+  padding: 1rem;
+}
+.heading-2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2;
+  color: indigo;
+}
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2;
+  color: blueviolet;
+}
+
+.span--bold {
+  display: inline;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.text--right {
+  display: flex;
+  justify-content: end;
+}
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.words {
+  padding-top: 0.5rem;
+  word-break: break-all;
+}
+
 img {
   display: block;
   vertical-align: middle;
@@ -26,25 +85,31 @@ img {
   height: auto;
 }
 
-
-.truncate{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.container{
-    max-width: 980px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .container > * + * {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 4px;
+  text-align: left;
+  border: 2px solid;
 }
