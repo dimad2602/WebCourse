@@ -7,22 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Товары</a></li>
-            <li>
-                <a href="#">Категории</a>
-                <ul>
-                    <li>Категория 1</li>
-                    <li>Категория 2</li>
-                    <li>Категория 3</li>
-                    <li>Категория 4</li>
-                </ul>
-            </li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </div>
+    <ul class="horiznav">
+        <li class="horiznav__item">
+          <a href="#" class="horiznav__link">Item 1</a>
+        </li>
+        <li class="horiznav__item">
+          <a href="#" class="horiznav__link">Item 2</a>
+          <ul class="horiznav__submenu">
+            <li><a href="#">Item 2.1</a></li>
+            <li><a href="#">Item 2.2</a></li>
+          </ul>
+        </li>
+        <li class="horiznav__item">
+          <a href="#" class="horiznav__link">Item 3</a>
+          <ul class="horiznav__submenu">
+            <li><a href="#">Item 3.1</a></li>
+            <li><a href="#">Item 3.2</a></li>
+            <li><a href="#">Item 3.3</a></li>
+          </ul>
+        </li>
+        <li class="horiznav__item">
+          <a href="#" class="horiznav__link">Item 4</a>
+          <ul class="horiznav__submenu">
+            <li><a href="#">Item 4.1</a></li>
+            <li><a href="#">Item 4.2</a></li>
+            <li><a href="#">Item 4.3</a></li>
+          </ul>
+        </li>
+      </ul>
 </body>
 </html>
