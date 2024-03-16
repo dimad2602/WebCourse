@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 15</title>
     <style>
-        .container{
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body class="container">
+      .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
 
-</body>
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 100px);
+        gap: 10px;
+      }
+
+      .item {
+        background-color: lightblue;
+        border: 1px solid blue;
+        padding: 10px;
+      }
+      .item1 {
+        grid-area: header;
+      }
+      .item2 {
+        grid-area: main;
+      }
+      .item3 {
+        grid-area: sidebar;
+      }
+      .item4 {
+        grid-area: footer;
+      }
+      .container {
+        grid-template-areas:
+          "header header main"
+          "sidebar . main"
+          ". footer .";
+      }
+    </style>
+  </head>
+  <body class="container">
+    <div class="item item1">Header</div>
+    <div class="item item2">Main Content</div>
+    <div class="item item3">Sidebar</div>
+    <div class="item item4">Footer</div>
+  </body>
 </html>
