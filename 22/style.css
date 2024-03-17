@@ -5,28 +5,57 @@ p,
 ol,
 ul,
 body {
-margin: 0;
+  margin: 0;
 }
 
-ol,li{
-    list-style: none;
-    padding: 0;
+ol,
+li {
+  list-style: none;
+  padding: 0;
 }
 
 img {
-    max-inline-size: 100%;
-    block-size: auto;
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
+body {
+  font-family: sans-serif;
 }
 
-.container{
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  margin: 10px 0;
+}
+
+.breadcrumbs li {
+  display: inline;
+  font-size: 18px;
+}
+
+.breadcrumbs svg {
+  vertical-align: middle;
+}
+
+.breadcrumbs li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/";
+}
+.breadcrumbs li:last-child {
+  font-weight: bold;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
 }

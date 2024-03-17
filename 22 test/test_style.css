@@ -1,0 +1,26 @@
+/* styles.css */
+.breadcrumb {
+  margin: 10px 0;
+}
+
+.breadcrumb__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb__item {
+  display: inline-block;
+}
+
+
+.breadcrumb__link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb__item--current {
+  color: #333333;
+  font-weight: bold;
+  /* Optionally, you can add different styling for the current page item */
+}
