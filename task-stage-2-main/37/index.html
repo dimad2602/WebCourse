@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 37.1</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+      function myFunctionDeclaration(name) {
+        return `Привет, ${name}!`;
+      }
 
+      const myFunctionExpression = function (name) {
+        return `Привет, ${name}!`;
+      };
+
+      const greetArrow1 = (name) => {
+        return `Привет, ${name}!`;
+      };
+
+      const greetArrow2 = (name) => `Привет, ${name}!`;
+
+      console.log(myFunctionDeclaration("Алекс"));
+      console.log(myFunctionExpression("Алекс"));
+      console.log(greetArrow1("Алекс"));
+      console.log(greetArrow2("Алекс"));
     </script>
-</body>
+  </body>
 </html>
