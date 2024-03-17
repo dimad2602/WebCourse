@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 38.3</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-
+      const calculate = (value1) => {
+        return (value2) => {
+          return (value3) => {
+            return value1 + value2 + value3;
+          };
+        };
+      };
+      const sum = calculate(1)(2)(3);
+      console.log(sum); // 6
     </script>
-</body>
+  </body>
 </html>

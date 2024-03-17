@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 38.2</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const add = (x, y) => x + y;
-        const subtract = (x, y) => x - y;
-        const multiply = (x, y) => x * y;
-        const divide = (x, y) => x / y;
+      const add = (x, y) => x + y;
+      const subtract = (x, y) => x - y;
+      const multiply = (x, y) => x * y;
+      const divide = (x, y) => x / y;
 
-        const calculate = () => {
+      const calculate = (value1, value2, action) => {
+        let result = 0;
+        result = action(value1, value2);
 
-        }
+        return result;
+      };
 
-        const resultAdd = calculate(1, 2, add);
-        // .....
-
+      const resultAdd = calculate(1, 2, add);
+      const resultSubtract = calculate(10, 5, subtract);
+      const resultmultiply = calculate(10, 5, multiply);
+      const resultdivide = calculate(10, 5, divide);
+      console.log(resultAdd); // 3
+      console.log(resultSubtract); // 5
+      console.log(resultmultiply); // 50
+      console.log(resultdivide); // 2
     </script>
-</body>
+  </body>
 </html>
