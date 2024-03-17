@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 23</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <style>
-    .task-list {
+      .task-list {
+        counter-reset: my-counter;
+      }
 
-    }
-
-    .task-list__item {
+      .task-list__item {
         margin-bottom: 10px;
         padding: 20px;
-    }
+        counter-increment: my-counter;
+      }
+      .task-list__item::before {
+        content: counter(my-counter);
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 50%;
+        background-color: mediumvioletred;
+        color: white;
+        margin-right: 5px;
+      }
 
+      .task-list__item:nth-child(even) {
+        background-color: aquamarine; /* Другой цвет фона для каждой второй задачи */
+      }
+
+      .task-list__item:nth-child(3) {
+        counter-set: my-counter 5;
+      }
+
+      .list-mark {
+        counter-reset: my-counter;
+      }
+
+      .list-mark__item {
+        counter-increment: my-counter;
+      }
+
+      .list-mark__item::before {
+        content: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.663 3.773A9 9 0 1021 12v-.92a1 1 0 112 0V12A11.002 11.002 0 018.188 22.313a11 11 0 118.289-20.366 1 1 0 11-.814 1.827z' fill='%23f8c300'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.707 3.293a1 1 0 010 1.414l-10 10.01a1 1 0 01-1.414 0l-3-3a1 1 0 111.414-1.414L12 12.595l9.293-9.302a1 1 0 011.414 0z' fill='%23f8c300'/%3E%3C/svg%3E");
+        margin-right: 5px;
+        vertical-align: middle;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <h2 class="heading">Задача 1</h2>
 
     <div class="container">
-        <ol class="task-list">
-            <li class="task-list__item">Список дел 1</li>
-            <li class="task-list__item">Список дел 2</li>
-            <li class="task-list__item">Список дел 3</li>
-            <li class="task-list__item">Список дел 4</li>
-        </ol>
+      <ol class="task-list">
+        <li class="task-list__item">Список дел 1</li>
+        <li class="task-list__item">Список дел 2</li>
+        <li class="task-list__item">Список дел 3</li>
+        <li class="task-list__item">Список дел 4</li>
+      </ol>
     </div>
 
     <h2 class="heading">Задача 2</h2>
 
     <div class="container">
-        <ul class="list-mark">
-            <li class="list-mark__item">Список 1</li>
-            <li class="list-mark__item">Список 2</li>
-            <li class="list-mark__item">Список 3</li>
-            <li class="list-mark__item">Список 4</li>
-        </ul>
+      <ul class="list-mark">
+        <li class="list-mark__item">Список 1</li>
+        <li class="list-mark__item">Список 2</li>
+        <li class="list-mark__item">Список 3</li>
+        <li class="list-mark__item">Список 4</li>
+      </ul>
     </div>
-
-</body>
+  </body>
 </html>
