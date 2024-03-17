@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 36</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const baseNumber = 10;
-        // const arrayNumber =
+      const baseNumber = 10;
+      const arrayNumber = Array.from({ length: baseNumber }, (k, v) => v);
+      {
+        let sumSquare = 0;
+        for (var i = 0; i < arrayNumber.length; i++) {
+          sumSquare += arrayNumber[i] * arrayNumber[i]; //arrayNumber[i].toExponential() ** 2;
+        }
+        console.log(sumSquare);
+      }
+
+      {
+        let sumSquare = 0;
+        for (const item of arrayNumber) {
+          sumSquare += item ** 2;
+        }
+        console.log(sumSquare);
+      }
+
+      {
+        let sumSquare = 0;
+        arrayNumber.forEach((e) => {
+          sumSquare += e ** 2;
+        });
+        console.log(sumSquare);
+      }
+
+      {
+        let sumSquare = 0;
+        sumSquare = arrayNumber.reduce((accumulator, currentValue) => {
+          return accumulator + currentValue ** 2;
+        }, 0);
+
+        console.log(sumSquare);
+      }
     </script>
-</body>
+  </body>
 </html>
