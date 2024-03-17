@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 34</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const object1 = {
-            name: 'Student1',
-            money: 100,
-        }
+      const object1 = {
+        name: "Student1",
+        money: 100,
 
-        const object2 = {
-            name: 'Student2',
-            money: 200,
-        }
+        toString() {
+          return `У студента ${this.name}`;
+        },
+        valueOf() {
+          return `в кошельке: ${this.money} рублей`;
+        },
+      };
 
-        const object3 = {
-            name: 'Student3',
-            money: 300,
-        }
+      const object2 = {
+        name: "Student2",
+        money: 200,
+        toString() {
+          return `У студента ${this.name} `;
+        },
+        valueOf() {
+          return `в кошельке: ${this.money} рублей `;
+        },
+      };
 
-        const divider = () => ({})
+      const object3 = {
+        name: "Student3",
+        money: 300,
+        toString() {
+          return `У студента ${this.name} `;
+        },
+        valueOf() {
+          return `в кошельке: ${this.money} рублей`;
+        },
+      };
 
-        const result = (`${object1}` + object1) + divider + (`${object2}` + object2) + divider + (`${object3}` + object3)
-        console.log(result)
+      const divider = " | ";
+
+      const result =
+        `${object1}` +
+        object1 +
+        divider +
+        (`${object2}` + object2) +
+        divider +
+        (`${object3}` + object3);
+      console.log(result);
     </script>
-</body>
+  </body>
 </html>
