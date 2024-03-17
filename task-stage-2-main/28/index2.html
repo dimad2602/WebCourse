@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 28.2</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const age = 10
-        console.log(typeof age)
+      const age = 10;
+      console.log(typeof age);
+      const undefinedValue = undefined;
+      const nullValue = null;
+      const booleanValue = true;
+      const numberValue = 42;
+      const bigIntValue = 1234567890123456789012345678901234567890n;
+      const symbolValue = Symbol("description");
+      const stringValue = "Hello, world!";
 
+      const objectValue = { name: "Alex" };
+      const arrayValue = [1, 2, 3];
+      const functionValue = function () {};
+      const dateObject = new Date();
 
+      console.log(typeof undefinedValue);
+      console.log(typeof nullValue);
+      console.log(typeof booleanValue);
+      console.log(typeof numberValue);
+      console.log(typeof bigIntValue);
+      console.log(typeof symbolValue);
+      console.log(typeof stringValue);
+
+      console.log(typeof objectValue);
+      console.log(typeof arrayValue);
+      console.log(Array.isArray(arrayValue));
+      console.log(typeof functionValue);
+      console.log(typeof dateObject);
     </script>
-</body>
+  </body>
 </html>
