@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 32</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const value1 = "25.3";
-        const value2 = "786.867";
+      const value1 = "25.3";
+      const value2 = "786.867";
 
+      const sum = Math.ceil(+value1 + Number(value2));
 
-        const result = '';
-
-
+      const result = new Intl.NumberFormat("ru", {
+        style: "currency",
+        currency: "RUB",
+      }).format(sum);
+      console.log(result);
     </script>
-</body>
+  </body>
 </html>
