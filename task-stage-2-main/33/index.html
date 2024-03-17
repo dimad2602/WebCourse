@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 33</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const age = 10
-        console.log('age: ', Number(age), Boolean(age), String(age));
+      const age = 10;
+      console.log("age: ", Number(age), Boolean(age), String(age));
+
+      const undefinedValue = undefined;
+      console.log(
+        "undefinedValue:",
+        Number(undefinedValue),
+        String(undefinedValue),
+        Boolean(undefinedValue)
+      );
+
+      const nullValue = null;
+      console.log(
+        "nullValue:",
+        Number(nullValue),
+        String(nullValue),
+        Boolean(nullValue)
+      );
+
+      const booleanValue = true;
+      console.log(
+        "booleanValue:",
+        Number(booleanValue),
+        String(booleanValue),
+        Boolean(booleanValue)
+      );
+
+      const numberValue = 42;
+      console.log(
+        "numberValue:",
+        Number(numberValue),
+        String(numberValue),
+        Boolean(numberValue)
+      );
+
+      const bigIntValue = 1234567890123456789012345678901234567890n;
+      console.log(
+        "bigIntValue:",
+        Number(bigIntValue),
+        String(bigIntValue),
+        Boolean(bigIntValue)
+      );
+
+      const symbolValue = Symbol("description");
+      console.log(
+        "symbolValue:",
+        "Cannot convert to number",
+        String(symbolValue),
+        Boolean(symbolValue)
+      );
+
+      const stringValue = "Hello, world!";
+      console.log(
+        "stringValue:",
+        Number(stringValue),
+        String(stringValue),
+        Boolean(stringValue)
+      );
+
+      const objectValue = { name: "Alex" };
+      console.log(
+        "objectValue:",
+        Number(objectValue),
+        String(objectValue),
+        Boolean(objectValue)
+      );
+
+      const arrayValue = [1, 2, 3];
+      console.log(
+        "arrayValue:",
+        Number(arrayValue),
+        String(arrayValue),
+        Boolean(arrayValue)
+      );
+
+      const functionValue = function () {};
+      console.log(
+        "functionValue:",
+        Number(functionValue),
+        String(functionValue),
+        Boolean(functionValue)
+      );
+
+      const dateObject = new Date();
+      console.log(
+        "dateObject:",
+        Number(dateObject),
+        String(dateObject),
+        Boolean(dateObject)
+      );
     </script>
-</body>
+  </body>
 </html>
