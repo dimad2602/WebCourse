@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 30</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const text = 'всеМ прИвЕт, прИяТно ПоЗНакоМиТьсЯ!';
+      const text = "всеМ прИвЕт, прИяТно ПоЗНакоМиТьсЯ!";
+      const newText =
+        text.charAt(0).toUpperCase() + text.slice(1).toLocaleLowerCase();
+      console.log(newText);
 
+      const byeText = newText.replace("привет", "пока");
+      console.log(byeText);
+
+      console.log(byeText.length);
+
+      console.log(byeText[byeText.length - 1]);
     </script>
-</body>
+  </body>
 </html>
