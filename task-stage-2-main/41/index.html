@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 41</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const person = {
-            firstName: 'Alex',
-            age: 20,
-            isAdult: true,
+      const person = {
+        firstName: "Alex",
+        age: 20,
+        isAdult: true,
 
-            hello: () => console.log(`Hi ${this.firstName}`),
+        hello() {
+          console.log(`Hi ${this.firstName}`);
+        },
 
-            info: () => {
-                const split = function () {
-                    return `
+        info() {
+          const split = function () {
+            return `
                         Name: ${this.firstName}
                         Age: ${this.age}
-                        isAdult: ${this.isAdult ? 'Y': 'N'}
-                    `
-                }
-                console.log(split())
-            },
-        }
+                        isAdult: ${this.isAdult ? "Y" : "N"}
+                    `;
+          }.bind(this);
+          console.log(split());
+        },
+      };
 
-        obj.hello();
-        obj.info();
+      person.hello();
+      person.info();
     </script>
-</body>
+  </body>
 </html>
