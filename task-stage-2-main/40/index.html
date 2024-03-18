@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 40</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+      const info = ({ firstName, lastName, age = 18 }) => {
+        console.log(`Меня зовут ${firstName} ${lastName}`);
+        console.log(`Мне ${age} лет`);
+      };
 
-        const info = () => {
+      const obj = {
+        firstName: "Иван",
+        lastName: "Иванов",
+      };
 
-        }
+      //task 1
+      /* const name = "Иван2";
+      const last = "Иванов2";
+      const age = 50; */
 
-        const obj = {
-            firstName: 'Иван',
-            lastName: 'Иванов',
-        }
+      info(obj);
+      console.log("----");
+      //task 1
+      //info({ firstName: name, lastName: last, age });
 
-        const name = 'Иван2';
-        const last = 'Иванов2';
-        const age = 50;
-
-        info(obj);
-        console.log('----');
-        info({firstName: name, lastName: last, age});
-
+      //task2
+      const { firstName: name, lastName: last, age: ageValue } = obj;
+      info({ firstName: name, lastName: last, ageValue });
     </script>
-</body>
+  </body>
 </html>
