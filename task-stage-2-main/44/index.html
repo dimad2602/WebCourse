@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 44</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const fructs = ['Банан', 'Арбуз', 'Яблоко', 'Виноград', 'Груша'];
+      const fructs = ["Банан", "Арбуз", "Яблоко", "Виноград", "Груша"];
 
-        console.log(fructs)
+      const indexToRemove = fructs.indexOf("Яблоко");
+
+      fructs.splice(indexToRemove, 1);
+
+      fructs.shift();
+      fructs.pop();
+
+      console.log(fructs);
     </script>
-</body>
+  </body>
 </html>
