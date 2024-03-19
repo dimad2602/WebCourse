@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 53</title>
     <style>
-        .container{
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 50px 0;
-        }
-        .button {
-            padding: 10px 20px;
-            font-size: 24px;
-            background-color: #2196F3;
-            cursor: pointer;
-            color: white;
-        }
+      .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 24px;
+        background-color: #2196f3;
+        cursor: pointer;
+        color: white;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <button class="button" type="button"> <span>А</span> Нажми меня  <span>Я</span> </button>
+      <button class="button" type="button">
+        <span>А</span> Нажми меня <span>Я</span>
+      </button>
     </div>
 
     <script>
+      const button = document.querySelector(".button");
+      button.addEventListener("click", () => {
+        //console.dir(event.currentTarget);
+        const currentTarget = event.currentTarget;
+        console.log("className:", currentTarget.className);
+        console.log("textContent:", currentTarget.textContent);
+        console.log("innerHTML:", currentTarget.innerHTML);
+        console.log("nodeName:", currentTarget.nodeName);
 
+        console.log(
+          "previousElementSibling:",
+          currentTarget.previousElementSibling
+        );
+        console.log("previousSibling:", currentTarget.previousSibling);
+        console.log("nextSibling:", currentTarget.nextSibling);
+        console.log("nextElementSibling:", currentTarget.nextElementSibling);
+        console.log("firstChild:", currentTarget.firstChild);
+        console.log("firstElementChild:", currentTarget.firstElementChild);
+        console.log("lastChild:", currentTarget.lastChild);
+        console.log("lastElementChild:", currentTarget.lastElementChild);
+        console.log("parentElement:", currentTarget.parentElement);
+        console.log("childNodes:", currentTarget.childNodes);
+        console.log("children:", currentTarget.children);
+      });
     </script>
-</body>
+  </body>
 </html>
