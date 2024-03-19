@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 52</title>
     <style>
-        body{
-            font-family: sans-serif;
-        }
-        .container{
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 50px 0;
-        }
-        .button {
-            padding: 10px 20px;
-            font-size: 24px;
-            background-color: #2196F3;
-            cursor: pointer;
-            color: white;
-            margin-bottom: 2rem;
-        }
+      body {
+        font-family: sans-serif;
+      }
+      .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 24px;
+        background-color: #2196f3;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 2rem;
+      }
 
-        .items{
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 10px;
-        }
-        .item{
-            display: flex;
-            flex-direction: column;
-            border: 1px solid black;
-        }
-        .item__name{
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-        .item__content{
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-        .item__footer{
-            background-color: black;
-            color: white;
-            padding: 5px;
-            text-align: center;
-        }
-        .item__bg{
-            height: 150px;
-            background-color: black;
-        }
-        .item__body{
-            padding: 10px;
-        }
-
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+      }
+      .item__name {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      .item__content {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      .item__footer {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        text-align: center;
+      }
+      .item__bg {
+        height: 150px;
+        background-color: black;
+      }
+      .item__body {
+        padding: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-
-        <div class="items">
-
-            <!-- <div class="item">
+      <div class="items">
+        <!-- <div class="item">
                 <div class="item__bg"></div>
                 <div class="item__body">
                     <h2 class="item__name">Title 1</h2>
@@ -70,41 +67,90 @@
                     <div class="item__footer">Read More</div>
                 </div>
             </div> -->
-
-        </div>
-
+      </div>
     </div>
 
     <script>
+      const lists = [
+        {
+          id: 1,
+          name: "Название новости 1",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque atque velit esse aperiam ducimus magni aspernatur deleniti harum repudiandae expedita mollitia impedit nobis ipsam nam, temporibus, adipisci vitae culpa.",
+        },
+        {
+          id: 2,
+          name: "Название новости 2",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias cum nemo dolorum iure excepturi quisquam cupiditate assumenda, animi non consequuntur illum facilis itaque temporibus velit omnis minus expedita neque!",
+        },
+        {
+          id: 3,
+          name: "Название новости 3",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora fugit iure enim incidunt excepturi id culpa ipsum obcaecati. Ea dolores consequatur ducimus error beatae quos omnis laudantium labore voluptatem laborum.",
+        },
+        {
+          id: 4,
+          name: "Название новости 4",
+          description:
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eveniet laudantium ut rerum, aliquid accusantium quis fugit sint commodi dolorum eos! Dolores possimus nihil quibusdam ea debitis sunt eos placeat.",
+        },
+        {
+          id: 5,
+          name: "Название новости 5",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id explicabo quis asperiores fugiat quae sint doloremque qui atque vero illum iure nostrum nihil reprehenderit, blanditiis facilis magnam magni. Dicta, quidem.",
+        },
+      ];
 
-        const lists = [
-            {
-                id: 1,
-                name: 'Название новости 1',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque atque velit esse aperiam ducimus magni aspernatur deleniti harum repudiandae expedita mollitia impedit nobis ipsam nam, temporibus, adipisci vitae culpa.'
-            },
-            {
-                id: 2,
-                name: 'Название новости 2',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias cum nemo dolorum iure excepturi quisquam cupiditate assumenda, animi non consequuntur illum facilis itaque temporibus velit omnis minus expedita neque!'
-            },
-            {
-                id: 3,
-                name: 'Название новости 3',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora fugit iure enim incidunt excepturi id culpa ipsum obcaecati. Ea dolores consequatur ducimus error beatae quos omnis laudantium labore voluptatem laborum.'
-            },
-            {
-                id: 4,
-                name: 'Название новости 4',
-                description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eveniet laudantium ut rerum, aliquid accusantium quis fugit sint commodi dolorum eos! Dolores possimus nihil quibusdam ea debitis sunt eos placeat.'
-            },
-            {
-                id: 5,
-                name: 'Название новости 5',
-                description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id explicabo quis asperiores fugiat quae sint doloremque qui atque vero illum iure nostrum nihil reprehenderit, blanditiis facilis magnam magni. Dicta, quidem.'
-            }
-        ]
+      const body = document.querySelector(".items");
 
+      lists.forEach((e) => {
+        const item = document.createElement("div");
+        item.className = "item";
+
+        const divItemBg = document.createElement("div");
+        divItemBg.className = "item__bg";
+
+        const divItemBody = document.createElement("div");
+        divItemBody.className = "item__body";
+
+        const h2ItemName = document.createElement("h2");
+        h2ItemName.className = "item__name";
+        h2ItemName.textContent = e.name;
+
+        const pItemContent = document.createElement("p");
+        pItemContent.className = "item__content";
+        pItemContent.textContent = e.description;
+
+        const divItemFooter = document.createElement("div");
+        divItemFooter.className = "item__footer";
+        divItemFooter.textContent = "Read More";
+
+        divItemBody.appendChild(h2ItemName);
+        divItemBody.appendChild(pItemContent);
+        divItemBody.appendChild(divItemFooter);
+
+        item.appendChild(divItemBg);
+        item.appendChild(divItemBody);
+
+        body.appendChild(item);
+      });
+
+      lists.forEach((e) => {
+        const itemHTML = `
+    <div class="item">
+      <div class="item__bg"></div>
+      <div class="item__body">
+        <h2 class="item__name">${e.name}</h2>
+        <p class="item__content">${e.description}</p>
+        <div class="item__footer">Read More</div>
+      </div>
+    </div>
+  `;
+        body.insertAdjacentHTML("beforeend", itemHTML);
+      });
     </script>
-</body>
+  </body>
 </html>
