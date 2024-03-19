@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 47</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="by-id">Поиск по ID</div>
     <div class="by-class">Поиск по классу 1</div>
     <div class="by-class">Поиск по классу 2</div>
     <article>Поиск по тегу</article>
 
     <script>
+      const searchById = document.getElementById("by-id");
+      const searchByClass = document.getElementsByClassName("by-class");
+      const searchByArticle = document.getElementsByTagName("article");
+      console.log(searchById);
+      console.log(searchByClass);
+      console.log(searchByArticle);
 
+      const searchQueryId = document.querySelector("#by-id");
+      const searchQueryClass = document.querySelector(".by-class");
+      const searchQueryTag = document.querySelector("article");
+      console.log(searchQueryId);
+      console.log(searchQueryClass);
+      console.log(searchQueryTag);
+
+      const searchAllQueryId = document.querySelectorAll("#by-id");
+      const searchAllQueryClass = document.querySelectorAll(".by-class");
+      const searchAllQueryTag = document.querySelectorAll("article");
+
+      console.log(searchAllQueryId);
+      console.log(searchAllQueryClass);
+      console.log(searchAllQueryTag);
+
+      const searchAll = document.querySelectorAll("#by-id, .by-class, article");
+      console.log(searchAll);
     </script>
-</body>
+  </body>
 </html>
