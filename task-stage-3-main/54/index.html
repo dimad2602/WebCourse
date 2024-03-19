@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 54</title>
     <style>
-        .container{
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 50px 0;
-        }
-        .button {
-            padding: 10px 20px;
-            font-size: 24px;
-            background-color: #2196F3;
-            cursor: pointer;
-            color: white;
-        }
-        .grid{
-            display: flex;
-            gap: 6px;
-        }
+      .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 24px;
+        background-color: #2196f3;
+        cursor: pointer;
+        color: white;
+      }
+      .grid {
+        display: flex;
+        gap: 6px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="grid">
-            <button class="button js-button-click" type="button"> Нажми меня </button>
-            <button class="button js-button-add" type="button"> Добавить событие </button>
-            <button class="button js-button-remove" type="button"> Удалить событие </button>
-        </div>
+      <div class="grid">
+        <button class="button js-button-click" type="button">Нажми меня</button>
+        <button class="button js-button-add" type="button">
+          Добавить событие
+        </button>
+        <button class="button js-button-remove" type="button">
+          Удалить событие
+        </button>
+      </div>
     </div>
 
     <script>
+      const buttonAdd = document.querySelector(".js-button-add");
+      const buttonClick = document.querySelector(".js-button-click");
+      const buttonRemove = document.querySelector(".js-button-remove");
+      let clickHandler;
 
+      buttonAdd.addEventListener("click", () => {
+        if (!clickHandler) {
+          clickHandler = () => {
+            alert("CLICK!");
+          };
+          buttonClick.addEventListener("click", clickHandler);
+        }
+      });
+
+      buttonRemove.addEventListener("click", () => {
+        if (clickHandler) {
+          buttonClick.removeEventListener("click", clickHandler);
+          clickHandler = null;
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
