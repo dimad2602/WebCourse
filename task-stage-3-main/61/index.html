@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 61</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css" />
     <style>
-        body{
-            font-family: sans-serif;
-            margin: 0;
-        }
-        *, ::after, ::before {
-            box-sizing: border-box;
-        }
-        .container{
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 50px 0;
-        }
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+      }
 
-        .grid{
-            display: flex;
-            gap: 20px;
-        }
+      .grid {
+        display: flex;
+        gap: 20px;
+      }
     </style>
-</head>
-<body class="container">
+  </head>
+  <body class="container">
     <div class="grid">
-        <input class="input js-input" type="text">
-        <select class="input input--select js-select">
-            <option selected disabled value="">Выберите машину</option>
-            <option value="1">Машина 1</option>
-            <option value="2">Машина 2</option>
-        </select>
+      <input class="input js-input" type="text" />
+      <select class="input input--select js-select">
+        <option selected disabled value="">Выберите машину</option>
+        <option value="1">Машина 1</option>
+        <option value="2">Машина 2</option>
+      </select>
     </div>
     <script>
-        const search = location.search;
-        const params = new URLSearchParams(search);
+      const search = location.search;
+      const params = new URLSearchParams(search);
 
-        const input = document.querySelector('.js-input')
-        const select = document.querySelector('.js-select')
+      const input = document.querySelector(".js-input");
+      const select = document.querySelector(".js-select");
 
+      //   input.addEventListener("change", (event) => {
+      //     const searchParams = new URLSearchParams(location.hash.slice(1));
+      //     searchParams.set("text", event.target.value);
+      //     window.location.hash = searchParams.toString();
+      //   });
 
+      //   select.addEventListener("change", (e) => {
+      //     const searchParams = new URLSearchParams(location.hash.slice(1));
+      //     searchParams.set("car_id", e.target.value);
+      //     window.location.hash = searchParams.toString();
+      //   });
 
+      input.addEventListener("change", (e) => {
+        params.set("text", e.target.value);
+        window.location.search = params.toString();
+      });
+      select.addEventListener("change", (e) => {
+        params.set("car_id", e.target.value);
+        window.location.search = params.toString();
+      });
+
+      input.value = params.get("text") ?? "";
+      select.value = params.get("car_id") ?? "";
     </script>
-</body>
+  </body>
 </html>
