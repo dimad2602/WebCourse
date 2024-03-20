@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 59</title>
     <style>
-        body{
-            font-family: sans-serif;
-            margin: 0;
-        }
-        *, ::after, ::before {
-            box-sizing: border-box;
-        }
-        .container{
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 50px 0;
-        }
-        .search{
-            display: flex;
-            gap: 6px;
-        }
-        .list__element--active{
-            color: red;
-        }
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+      }
+      .search {
+        display: flex;
+        gap: 6px;
+      }
+      .list__element--active {
+        color: red;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="search">
-            <input class="search__input" type="text" name="" id="">
-            <button class="search__btn" type="button">Найти</button>
-            <button class="search__clear" type="button">Очистить</button>
-        </div>
-        <ul class="list"></ul>
+      <div class="search">
+        <input class="search__input" type="text" name="" id="" />
+        <button class="search__btn" type="button">Найти</button>
+        <button class="search__clear" type="button">Очистить</button>
+      </div>
+      <ul class="list"></ul>
     </div>
 
     <script>
+      const words = [
+        "День",
+        "Том",
+        "Гость",
+        "Выборы",
+        "Солнце",
+        "Ход",
+        "Речь",
+        "Смена",
+        "Бизнес",
+        "Качество",
+        "Республика",
+        "Сердце",
+        "Администрация",
+        "Поезд",
+        "Работник",
+        "Ресурс",
+        "Часть",
+        "Изучение",
+        "Бок",
+        "Понимание",
+        "Животное",
+        "Утро",
+        "Правда",
+        "Личность",
+        "Звонок",
+        "Урок",
+        "Командир",
+        "Американец",
+        "Заседание",
+        "Образ",
+      ];
 
-        const words = ['День','Том','Гость','Выборы','Солнце','Ход','Речь','Смена','Бизнес','Качество','Республика','Сердце','Администрация','Поезд','Работник','Ресурс','Часть','Изучение','Бок','Понимание','Животное','Утро','Правда','Личность','Звонок','Урок','Командир','Американец','Заседание','Образ'];
+      const list = document.querySelector(".list");
+      const input = document.querySelector(".search__input");
+      const searchButton = document.querySelector(".search__btn");
+      const clearButton = document.querySelector(".search__clear");
 
-        const list = document.querySelector('.list')
-        const input = document.querySelector('.search__input')
+      let searchQuery = null;
 
+      function updateList(filteredWords) {
+        list.innerHTML = "";
+        filteredWords.forEach((word) => {
+          const li = document.createElement("li");
+          li.innerHTML = `<p>${word}</p>`;
+          list.appendChild(li);
+        });
+      }
 
+      searchButton.addEventListener("click", (e) => {
+        searchQuery = input.value;
+        const result = words.filter((e) =>
+          e.toLowerCase().includes(searchQuery)
+        );
+        updateList(result);
+      });
+
+      clearButton.addEventListener("click", (e) => {
+        searchQuery = null;
+        input.value = "";
+        updateList(words);
+      });
+
+      list.addEventListener("click", (event) => {
+        const li = event.target.closest("li");
+        if (!li) return;
+        li.classList.toggle("list__element--active");
+      });
     </script>
-</body>
+  </body>
 </html>
