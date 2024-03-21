@@ -60,7 +60,6 @@ function loadProducts() {
 }
 
 function loadCategories() {
-  console.log(getCategories());
   getCategories()
     .then((data) => {
       data.forEach((category) => {
