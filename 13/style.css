@@ -20,9 +20,9 @@ img {
 }
 
 .icon {
-  float: left; /* or right depending on your layout */
+  flex-shrink: 0;
   min-width: 24px;
-  margin-right: 10px; /* Adjust spacing as needed */
+  margin-right: 10px;
 }
 
 .container {
@@ -46,11 +46,12 @@ img {
   gap: 10px;
 }
 .col-1 {
+  flex-shrink: 0;
+  flex-grow: 1;
+  max-width: 300px;
   background-color: #e6e6e6;
   border: 1px solid red;
   padding: 4px;
-  flex-basis: 300px;
-  min-width: 300px;
 }
 .col-2 {
   background-color: #d5d5d5;
