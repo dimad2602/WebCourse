@@ -17,13 +17,13 @@
         },
 
         info() {
-          const split = function () {
+          const split = () => {
             return `
                         Name: ${this.firstName}
                         Age: ${this.age}
                         isAdult: ${this.isAdult ? "Y" : "N"}
                     `;
-          }.bind(this);
+          };
           console.log(split());
         },
       };
