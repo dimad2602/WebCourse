@@ -85,10 +85,8 @@ img {
   color: white;
   padding: 5px;
   text-align: center;
-}
 
-.item2__row {
-  flex-direction: row;
+  align-self: flex-end;
 }
 
 .item2__bg {
