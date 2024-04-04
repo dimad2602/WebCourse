@@ -24,6 +24,7 @@ img {
 ::before {
   box-sizing: border-box;
 }
+
 body {
   font-family: sans-serif;
 }
@@ -34,28 +35,30 @@ body {
   margin: 0 auto;
 }
 
+/* Стили для хлебных крошек */
 .breadcrumbs {
   margin: 10px 0;
 }
 
-.breadcrumbs li {
+.breadcrumbs__item {
   display: inline;
   font-size: 18px;
 }
 
-.breadcrumbs svg {
+.breadcrumbs__ico {
   vertical-align: middle;
 }
 
-.breadcrumbs li + li:before {
+.breadcrumbs__item + .breadcrumbs__item:before {
   padding: 8px;
   color: black;
   content: "/";
 }
-.breadcrumbs li:last-child {
+
+.breadcrumbs__item:last-child {
   font-weight: bold;
 }
 
-.breadcrumbs a {
+.breadcrumbs__link {
   text-decoration: none;
 }
