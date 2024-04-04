@@ -19,7 +19,9 @@ const result1 =
 const result2 = `
 firstName: ${firstName} 
 lastName: ${lastName} 
-patronymic: ${patronymic} \nbirthYear: ${birthYear} \nmajor: ${major}`;
+patronymic: ${patronymic} 
+birthYear: ${birthYear} 
+major: ${major}`;
 
 console.log(result1);
 console.log(result2);
