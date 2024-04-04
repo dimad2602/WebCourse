@@ -71,16 +71,18 @@ body {
   list-style-type: none;
 }
 
-.horiznav__submenu li {
+.horiznav__submenu-item {
+  display: block;
   background-color: coral;
   padding: 5px;
   border: 1px solid white;
 }
 
-.horiznav__submenu a {
+.horiznav__submenu-link {
+  display: block;
+  padding: 8px 16px;
   text-decoration: none;
-  color: black;
-  font-weight: 400;
+  color: #000;
 }
 
 .horiznav__item:hover .horiznav__submenu {
