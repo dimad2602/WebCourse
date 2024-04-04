@@ -45,11 +45,11 @@
 
       const result =
         `${object1}` +
-        object1 +
+        object1.valueOf() +
         divider +
-        (`${object2}` + object2) +
+        (`${object2}` + object2.valueOf()) +
         divider +
-        (`${object3}` + object3);
+        (`${object3}` + object3.valueOf());
       console.log(result);
     </script>
   </body>
