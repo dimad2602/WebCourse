@@ -3,6 +3,38 @@ img {
     block-size: auto;
 }
 
+body {
+    font-family: 'Zen Dots', cursive;
+}
+
+.banner {
+    background-size: cover;
+}
+
+.gallery__inner {
+    margin-top: 50px;
+}
+
+.banner__title, .gallery__title {
+    font-size: 48px;
+}
+
+.banner__title {
+    color: white;
+    padding: 150px 0;
+}
+
+.gallery__item {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
 body{
     font-family: 'Zen Dots', cursive;
 }
@@ -29,4 +61,4 @@ body{
     height: 600px;
     width: 100%;
     object-fit: cover;
-}
+} */
