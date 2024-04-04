@@ -51,7 +51,7 @@ body {
     max-width: 1024px;
   }
 }
-/*ширина экрана >= 1292px*/
+/* Избыточно */
 @media (min-width: 1292px) {
   .container {
     max-width: 1292px;

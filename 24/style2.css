@@ -97,6 +97,7 @@ body {
   background-color: beige;
 }
 
+/* Избыточно (-1px 1291)*/
 @media (max-width: 1292px) {
   .gallery {
     grid-template-columns: repeat(9, minmax(0, 1fr));
